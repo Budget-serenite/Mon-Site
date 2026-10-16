@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Budget Serein | Mindset & Finance</title>
+    <style>
+        /* Charte graphique @budget.serenite - Minimaliste Beige & Chocolat */
+        body {
+            background-color: #F5EBE6;
+            color: #4A3B32;
+            font-family: 'Cormorant Garamond', 'Georgia', serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 480px;
+            padding: 40px 20px;
+            box-sizing: border-box;
+            text-align: center;
+        }
+
+        /* Logo géométrique monogramme BS */
+        .logo-container {
+            width: 90px;
+            height: 90px;
+            border: 1.5px solid #4A3B32;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0 auto 24px auto;
+            background-color: #FFFDFB;
+            box-shadow: 0 4px 12px rgba(74, 59, 50, 0.05);
+        }
+
+        .logo-text {
+            font-size: 28px;
+            font-weight: bold;
+            letter-spacing: 2px;
+        }
+
+        h1 {
+            font-size: 26px;
+            margin: 0 0 8px 0;
+            font-weight: 600;
+        }
+
+        .bio {
+            font-size: 16px;
+            line-height: 1.6;
+            margin-bottom: 32px;
+            color: #615045;
+        }
+
+        /* Boutons de liens */
+        .btn {
+            background-color: #FFFDFB;
+            color: #4A3B32;
+            text-decoration: none;
+            display: block;
+            padding: 16px;
+            margin-bottom: 16px;
+            border: 1px solid rgba(74, 59, 50, 0.15);
+            border-radius: 8px;
+            font-size: 16px;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            box-shadow: 0 2px 6px rgba(74, 59, 50, 0.03);
+        }
+
+        .btn:hover {
+            background-color: #4A3B32;
+            color: #F5EBE6;
+            transform: translateY(-2px);
+        }
+
+        /* Section accordéon pour le Guide en 5 étapes */
+        .guide-section {
+            background-color: #FFFDFB;
+            border: 1px solid rgba(74, 59, 50, 0.15);
+            border-radius: 8px;
+            margin-top: 24px;
+            text-align: left;
+            overflow: hidden;
+        }
+
+        .guide-header {
+            padding: 16px;
+            background-color: #4A3B32;
+            color: #F5EBE6;
+            font-size: 16px;
+            font-weight: 600;
+            text-align: center;
+            cursor: pointer;
+        }
+
+        .guide-content {
+            padding: 20px;
+            font-size: 15px;
+            line-height: 1.6;
+        }
+
+        .step {
+            margin-bottom: 16px;
+            border-bottom: 1px solid rgba(74, 59, 50, 0.08);
+            padding-bottom: 12px;
+        }
+
+        .step:last-child {
+            margin-bottom: 0;
+            border-bottom: none;
+            padding-bottom: 0;
+        }
+
+        .step-title {
+            font-weight: bold;
+            margin-bottom: 4px;
+            display: flex;
+            align-items: center;
+        }
+
+        footer {
+            margin-top: auto;
+            padding: 24px;
+            font-size: 13px;
+            color: #8C7B70;
+        }
+    </style>
+    <link href="https://googleapis.com" rel="stylesheet">
+</head>
+<body>
+
+    <div class="container">
+        <!-- Logo -->
+        <div class="logo-container">
+            <span class="logo-text">BS</span>
+        </div>
+
+        <!-- Titre & Bio -->
+        <h1>@budget.serenite</h1>
+        <div class="bio">
+            🧠 L'argent est un comportement, pas des maths.<br>
+            📉 Du découvert subi à une discipline apaisée.
+        </div>
+
+        <!-- Liens professionnels -->
+        <a href="mailto:contact.budgetserenite@gmail.com" class="btn">📧 Me contacter (Partenariats & Pro)</a>
+        <a href="https://instagram.com" class="btn">📸 Retourner sur Instagram</a>
+
+        <!-- Guide Déroulant Intégration Directe -->
+        <div class="guide-section">
+            <div class="guide-header">📖 PLAN GRATUIT : Sortir du Découvert</div>
+            <div class="guide-content">
+                <div class="step">
+                    <div class="step-title">Étape 1 : Bloquer l'hémorragie</div>
+                    Supprime temporairement les applications d’achats compulsifs (Amazon, Vinted). Applique la règle des 48h avant tout achat non vital.
+                </div>
+                <div class="step">
+                    <div class="step-title">Étape 2 : Le diagnostic brut</div>
+                    Analyse tes 3 derniers mois de relevés. Repère les abonnements inutiles et quantifie la fuite de tes petites dépenses invisibles.
+                </div>
+                <div class="step">
+                    <div class="step-title">Étape 3 : Le reste à vivre strict</div>
+                    Calcule ton reste à vivre réel (Revenus - Charges fixes) et divise-le par 4. C'est ton enveloppe budgétaire hermétique par semaine.
+                </div>
+                <div class="step">
+                    <div class="step-title">Étape 4 : La négociation des frais</div>
+                    Demande à ton conseiller le remboursement gracieux de tes agios récents. Abaisse ton plafond de découvert pour créer un vrai garde-fou.
+                </div>
+                <div class="step">
+                    <div class="step-title">Étape 5 : Automatiser ton bouclier</div>
+                    Configure un virement automatique permanent (20€ à 50€) vers un livret séparé le lendemain de ta paye. Paye-toi en premier.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        © 2026 Budget Sérénité. Tous droits réservés.
+    </footer>
+
+</body>
+</html>
